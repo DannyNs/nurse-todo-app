@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewTaskForm should render without crashing 1`] = `
+<div
+  className="nr-new-task-form"
+>
+  <div
+    className="nr-new-task-form__labels"
+  >
+    <div>
+      Name:
+    </div>
+    <div>
+      Description:
+    </div>
+  </div>
+  <div
+    className="nr-new-task-form__content"
+  >
+    <div>
+      <input
+        name="name"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <input
+        name="description"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <button
+        onClick={[Function]}
+        type="submit"
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</div>
+`;

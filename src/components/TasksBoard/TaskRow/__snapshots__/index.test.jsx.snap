@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TaskRow should render without crashing 1`] = `
+<div
+  className="nr-task-row"
+>
+  <div
+    className="nr-task-row__labels"
+  >
+    <div>
+      Name:
+    </div>
+    <div>
+      Description:
+    </div>
+    <div>
+      Date:
+    </div>
+    <div>
+      Done:
+    </div>
+    <div>
+      Button:
+    </div>
+  </div>
+  <div
+    className="nr-task-row__content"
+  >
+    <div>
+      <span>
+        123
+      </span>
+      Mark Darcy
+    </div>
+    <div>
+      Give pills
+    </div>
+    <div>
+      Sat, 02 May 2009 05:14:01 GMT
+    </div>
+    <div>
+      no
+    </div>
+    <div>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        Done
+      </button>
+    </div>
+  </div>
+</div>
+`;

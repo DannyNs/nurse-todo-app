@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TasksBoard should render without crashing 1`] = `
+<div
+  className="hn-Tasks-board"
+>
+  <div
+    className="hn-Tasks-board__child"
+    key="1"
+  >
+    <_class
+      description="Change pillow"
+      done={true}
+      id={1}
+      markAsDone={[Function]}
+      name="Brian Adams"
+      time={1542907030618}
+    />
+  </div>
+  <div
+    className="hn-Tasks-board__child"
+    key="2"
+  >
+    <_class
+      description="Make bed"
+      done={false}
+      id={2}
+      markAsDone={[Function]}
+      name="Bob Dylan"
+      time={1542907031622}
+    />
+  </div>
+</div>
+`;

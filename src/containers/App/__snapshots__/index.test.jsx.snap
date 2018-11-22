@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render without crashing 1`] = `
+<div
+  className="nr-app"
+>
+  <div
+    className="nr-app__controls"
+  >
+    <h1
+      className="nr-app__controls--center"
+    >
+      Test 123
+    </h1>
+  </div>
+  <_class
+    addNewTask={[Function]}
+    newTask={NewTask {}}
+  />
+  <hr />
+  <_class
+    tasks={
+      Array [
+        Task {
+          "description": "Change pillow",
+          "done": true,
+          "id": 1,
+          "name": "Brian Adams",
+          "time": 1542907030863,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "Task@1.keys",
+              "observers": Set {},
+            },
+            "name": "Task@1",
+            "target": [Circular],
+            "values": Map {
+              "done" => true,
+            },
+          },
+        },
+        Task {
+          "description": "Make bed",
+          "done": false,
+          "id": 2,
+          "name": "Bob Dylan",
+          "time": 1542907031866,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "Task@2.keys",
+              "observers": Set {},
+            },
+            "name": "Task@2",
+            "target": [Circular],
+            "values": Map {
+              "done" => false,
+            },
+          },
+        },
+      ]
+    }
+  />
+</div>
+`;

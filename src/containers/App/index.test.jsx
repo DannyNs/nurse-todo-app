@@ -1,10 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import App from '.';
+import tasksStore from '../../stores/TaskStore';
 
 describe('App', () => {
   it('should render without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<App title="test 123" />, div);
+    // given
+    const title = 'Test 123';
+
+    // when
+    const wrapper = shallow(<App
+      title={title}
+      tasksStore={tasksStore}
+    />);
+
+    // then
+    expect(wrapper).toMatchSnapshot();
   });
 });
