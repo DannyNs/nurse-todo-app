@@ -16,7 +16,7 @@ const NewTaskForm = observer(({
   <div className="nr-new-task-form">
     <Grid container spacing={24}>
 
-      <Grid item xs={5}>
+      <Grid item md={5} xs={12}>
         <Input
           placeholder="Name"
           name="name"
@@ -26,7 +26,7 @@ const NewTaskForm = observer(({
         />
       </Grid>
 
-      <Grid item xs={5}>
+      <Grid item md={5} xs={12}>
         <Input
           placeholder="Task"
           name="description"
@@ -36,8 +36,13 @@ const NewTaskForm = observer(({
         />
       </Grid>
 
-      <Grid item xs={2}>
-        <Button variant="contained" className="nr-new-task-form__button" onClick={() => addNewTask(newTask)}>
+      <Grid item md={2} xs={12} className="nr-new-task-form--right">
+        <Button
+          variant="contained"
+          disabled={newTask.submitDisabled}
+          className="nr-new-task-form__button"
+          onClick={() => addNewTask(newTask)}
+        >
           +
         </Button>
       </Grid>

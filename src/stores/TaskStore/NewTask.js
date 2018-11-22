@@ -1,5 +1,5 @@
 import {
-  observable, action,
+  observable, action, computed,
 } from 'mobx';
 
 export default class NewTask {
@@ -24,5 +24,9 @@ export default class NewTask {
 
   @action setDescription = (newDescription) => {
     this.description = newDescription;
+  }
+
+  @computed get submitDisabled() {
+    return !(this.name.length > 0 && this.description.length > 0);
   }
 }

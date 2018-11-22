@@ -4,6 +4,7 @@ import { observer } from 'mobx-react';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import SvgIcon from '@material-ui/core/SvgIcon';
+import moment from 'moment';
 
 import './index.scss';
 
@@ -13,10 +14,10 @@ const TaskRow = observer(({
   <div className="nr-task-row">
     <Grid container spacing={24}>
       <Grid item xs={6}>
-        {time}
+        {moment.unix(time / 1000).format('YYYY-MM-DD')}
       </Grid>
-      <Grid item xs={6}>
-        {time}
+      <Grid item xs={6} className="nr-task-row--right">
+        {moment.unix(time / 1000).format('HH:mm:ss')}
       </Grid>
       <Grid item xs={8}>
         <Grid item xs={12} className="nr-task-row__name">
@@ -26,7 +27,7 @@ const TaskRow = observer(({
           {description}
         </Grid>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={4} className="nr-task-row--right">
         {
           done ? (
             <SvgIcon className="nr-task-row__done">

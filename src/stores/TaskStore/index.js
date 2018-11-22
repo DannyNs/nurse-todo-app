@@ -17,14 +17,14 @@ export class TasksStore {
         id: 1,
         name: 'Brian Adams',
         description: 'Change pillow',
-        time: new Date().getTime(),
+        time: Date.parse('Aug 9, 1995'),
         done: true,
       }),
       new Task({
         id: 2,
         name: 'Bob Dylan',
         description: 'Make bed',
-        time: new Date().getTime() + 1000,
+        time: Date.parse('Aug 9, 1995') + 1000,
         done: false,
       }),
     ];
@@ -32,7 +32,7 @@ export class TasksStore {
 
   @action addNewTask = (newTask) => {
     this.tasks = this.tasks
-      .concat(new Task(newTask));
+      .concat(new Task(Object.assign(newTask, { id: this.tasks.length + 1 })));
 
     newTask.clearData();
   }

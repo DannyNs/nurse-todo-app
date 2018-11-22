@@ -11,14 +11,14 @@ describe('TasksBoard', () => {
         id: 1,
         name: 'Brian Adams',
         description: 'Change pillow',
-        time: new Date().getTime(),
+        time: Date.parse('Aug 9, 1995'),
         done: true,
       }),
       new Task({
         id: 2,
         name: 'Bob Dylan',
         description: 'Make bed',
-        time: new Date().getTime() + 1000,
+        time: Date.parse('Aug 9, 1995') + 1000,
         done: false,
       }),
     ];

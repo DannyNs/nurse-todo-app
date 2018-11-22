@@ -1,5 +1,9 @@
 .nr-task-row {
   
+  &--right {
+    text-align: right;
+  }
+
   &__done {
     color: var(--main-success-color);
   }

@@ -12,13 +12,14 @@ exports[`TaskRow should render without crashing 1`] = `
       item={true}
       xs={6}
     >
-      1241241241
+      1970-01-15
     </WithStyles(Grid)>
     <WithStyles(Grid)
+      className="nr-task-row--right"
       item={true}
       xs={6}
     >
-      1241241241
+      09:47:21
     </WithStyles(Grid)>
     <WithStyles(Grid)
       item={true}
@@ -39,6 +40,7 @@ exports[`TaskRow should render without crashing 1`] = `
       </WithStyles(Grid)>
     </WithStyles(Grid)>
     <WithStyles(Grid)
+      className="nr-task-row--right"
       item={true}
       xs={4}
     >

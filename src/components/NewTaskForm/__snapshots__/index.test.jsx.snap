@@ -10,7 +10,8 @@ exports[`NewTaskForm should render without crashing 1`] = `
   >
     <WithStyles(Grid)
       item={true}
-      xs={5}
+      md={5}
+      xs={12}
     >
       <WithStyles(Input)
         className="nr-new-task-form__input"
@@ -22,7 +23,8 @@ exports[`NewTaskForm should render without crashing 1`] = `
     </WithStyles(Grid)>
     <WithStyles(Grid)
       item={true}
-      xs={5}
+      md={5}
+      xs={12}
     >
       <WithStyles(Input)
         className="nr-new-task-form__input"
@@ -33,11 +35,14 @@ exports[`NewTaskForm should render without crashing 1`] = `
       />
     </WithStyles(Grid)>
     <WithStyles(Grid)
+      className="nr-new-task-form--right"
       item={true}
-      xs={2}
+      md={2}
+      xs={12}
     >
       <WithStyles(Button)
         className="nr-new-task-form__button"
+        disabled={true}
         onClick={[Function]}
         variant="contained"
       >

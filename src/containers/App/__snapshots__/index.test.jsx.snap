@@ -36,7 +36,7 @@ exports[`App should render without crashing 1`] = `
           "done": true,
           "id": 1,
           "name": "Brian Adams",
-          "time": 1542912293486,
+          "time": 807919200000,
           Symbol(mobx did run lazy initializers): true,
           Symbol(mobx administration): ObservableObjectAdministration$$1 {
             "defaultEnhancer": [Function],
@@ -61,7 +61,7 @@ exports[`App should render without crashing 1`] = `
           "done": false,
           "id": 2,
           "name": "Bob Dylan",
-          "time": 1542912294490,
+          "time": 807919201000,
           Symbol(mobx did run lazy initializers): true,
           Symbol(mobx administration): ObservableObjectAdministration$$1 {
             "defaultEnhancer": [Function],

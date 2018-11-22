@@ -1,7 +1,11 @@
 .nr-new-task-form {
 
-  div &__button,
-  div &__button:hover {
+  &--right {
+    text-align: right;
+  }
+
+  div &__button:not(:disabled),
+  div &__button:hover:not(:disabled) {
     background-color: var(--main-success-color);
 
     span {

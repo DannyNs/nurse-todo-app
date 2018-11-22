@@ -14,7 +14,7 @@ exports[`TasksBoard should render without crashing 1`] = `
         done={true}
         markAsDone={[Function]}
         name="Brian Adams"
-        time={1542912293567}
+        time={807919200000}
       />
     </WithStyles(CardContent)>
   </WithStyles(Card)>
@@ -28,7 +28,7 @@ exports[`TasksBoard should render without crashing 1`] = `
         done={false}
         markAsDone={[Function]}
         name="Bob Dylan"
-        time={1542912294572}
+        time={807919201000}
       />
     </WithStyles(CardContent)>
   </WithStyles(Card)>
