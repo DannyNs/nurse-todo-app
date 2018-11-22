@@ -5,7 +5,6 @@ import TaskRow from '.';
 describe('TaskRow', () => {
   it('should render without crashing', () => {
     // given
-    const id = 123;
     const name = 'Mark Darcy';
     const description = 'Give pills';
     const time = 1241241241;
@@ -15,7 +14,6 @@ describe('TaskRow', () => {
     // when
     const wrapper = shallow(
       <TaskRow
-        id={id}
         name={name}
         description={description}
         time={time}

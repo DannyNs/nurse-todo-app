@@ -1,0 +1,15 @@
+.nr-new-task-form {
+
+  div &__button,
+  div &__button:hover {
+    background-color: var(--main-success-color);
+
+    span {
+      color: var(--light-text-color);
+    }
+  }
+
+  &__input {
+    width: 100%;
+  }
+}

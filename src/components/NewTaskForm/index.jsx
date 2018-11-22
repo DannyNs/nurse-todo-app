@@ -1,6 +1,10 @@
 import React from 'react';
 import PropType from 'prop-types';
 import { observer } from 'mobx-react';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import Input from '@material-ui/core/Input';
+
 import NewTask from '../../stores/TaskStore/NewTask';
 
 import './index.scss';
@@ -10,33 +14,35 @@ const NewTaskForm = observer(({
   newTask,
 }) => (
   <div className="nr-new-task-form">
-    <div className="nr-new-task-form__labels">
-      <div>Name:</div>
-      <div>Description:</div>
-    </div>
-    <div className="nr-new-task-form__content">
-      <div>
-        <input
-          type="text"
+    <Grid container spacing={24}>
+
+      <Grid item xs={5}>
+        <Input
+          placeholder="Name"
           name="name"
           value={newTask.name}
+          className="nr-new-task-form__input"
           onChange={e => newTask.setName(e.target.value)}
         />
-      </div>
-      <div>
-        <input
-          type="text"
+      </Grid>
+
+      <Grid item xs={5}>
+        <Input
+          placeholder="Task"
           name="description"
           value={newTask.description}
+          className="nr-new-task-form__input"
           onChange={e => newTask.setDescription(e.target.value)}
         />
-      </div>
-      <div>
-        <button type="submit" onClick={() => addNewTask(newTask)}>
-          Add
-        </button>
-      </div>
-    </div>
+      </Grid>
+
+      <Grid item xs={2}>
+        <Button variant="contained" className="nr-new-task-form__button" onClick={() => addNewTask(newTask)}>
+          +
+        </Button>
+      </Grid>
+
+    </Grid>
   </div>
 ));
 

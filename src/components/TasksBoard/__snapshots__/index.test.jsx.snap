@@ -2,33 +2,35 @@
 
 exports[`TasksBoard should render without crashing 1`] = `
 <div
-  className="hn-Tasks-board"
+  className="hn-tasks-board"
 >
-  <div
-    className="hn-Tasks-board__child"
+  <WithStyles(Card)
+    className="hn-tasks-board__child"
     key="1"
   >
-    <_class
-      description="Change pillow"
-      done={true}
-      id={1}
-      markAsDone={[Function]}
-      name="Brian Adams"
-      time={1542907030618}
-    />
-  </div>
-  <div
-    className="hn-Tasks-board__child"
+    <WithStyles(CardContent)>
+      <_class
+        description="Change pillow"
+        done={true}
+        markAsDone={[Function]}
+        name="Brian Adams"
+        time={1542912293567}
+      />
+    </WithStyles(CardContent)>
+  </WithStyles(Card)>
+  <WithStyles(Card)
+    className="hn-tasks-board__child"
     key="2"
   >
-    <_class
-      description="Make bed"
-      done={false}
-      id={2}
-      markAsDone={[Function]}
-      name="Bob Dylan"
-      time={1542907031622}
-    />
-  </div>
+    <WithStyles(CardContent)>
+      <_class
+        description="Make bed"
+        done={false}
+        markAsDone={[Function]}
+        name="Bob Dylan"
+        time={1542912294572}
+      />
+    </WithStyles(CardContent)>
+  </WithStyles(Card)>
 </div>
 `;

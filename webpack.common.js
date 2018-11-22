@@ -10,7 +10,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       appMountId: 'root',
-      title: 'Hacker News',
+      title: 'Nurse Todo App',
       template: HtmlWebpackTemplate,
     }),
   ],

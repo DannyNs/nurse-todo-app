@@ -4,43 +4,46 @@ exports[`NewTaskForm should render without crashing 1`] = `
 <div
   className="nr-new-task-form"
 >
-  <div
-    className="nr-new-task-form__labels"
+  <WithStyles(Grid)
+    container={true}
+    spacing={24}
   >
-    <div>
-      Name:
-    </div>
-    <div>
-      Description:
-    </div>
-  </div>
-  <div
-    className="nr-new-task-form__content"
-  >
-    <div>
-      <input
+    <WithStyles(Grid)
+      item={true}
+      xs={5}
+    >
+      <WithStyles(Input)
+        className="nr-new-task-form__input"
         name="name"
         onChange={[Function]}
-        type="text"
+        placeholder="Name"
         value=""
       />
-    </div>
-    <div>
-      <input
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={5}
+    >
+      <WithStyles(Input)
+        className="nr-new-task-form__input"
         name="description"
         onChange={[Function]}
-        type="text"
+        placeholder="Task"
         value=""
       />
-    </div>
-    <div>
-      <button
+    </WithStyles(Grid)>
+    <WithStyles(Grid)
+      item={true}
+      xs={2}
+    >
+      <WithStyles(Button)
+        className="nr-new-task-form__button"
         onClick={[Function]}
-        type="submit"
+        variant="contained"
       >
-        Add
-      </button>
-    </div>
-  </div>
+        +
+      </WithStyles(Button)>
+    </WithStyles(Grid)>
+  </WithStyles(Grid)>
 </div>
 `;

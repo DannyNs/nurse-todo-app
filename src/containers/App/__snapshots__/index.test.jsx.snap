@@ -4,20 +4,30 @@ exports[`App should render without crashing 1`] = `
 <div
   className="nr-app"
 >
-  <div
-    className="nr-app__controls"
+  <WithStyles(AppBar)
+    color="default"
+    position="static"
   >
-    <h1
-      className="nr-app__controls--center"
+    <WithStyles(Toolbar)
+      className="nr-app__title"
     >
-      Test 123
-    </h1>
-  </div>
-  <_class
-    addNewTask={[Function]}
-    newTask={NewTask {}}
-  />
-  <hr />
+      <WithStyles(Typography)
+        variant="title"
+      >
+        Test 123
+      </WithStyles(Typography)>
+    </WithStyles(Toolbar)>
+  </WithStyles(AppBar)>
+  <WithStyles(Card)
+    className="nr-app__add-new-task"
+  >
+    <WithStyles(CardContent)>
+      <_class
+        addNewTask={[Function]}
+        newTask={NewTask {}}
+      />
+    </WithStyles(CardContent)>
+  </WithStyles(Card)>
   <_class
     tasks={
       Array [
@@ -26,7 +36,7 @@ exports[`App should render without crashing 1`] = `
           "done": true,
           "id": 1,
           "name": "Brian Adams",
-          "time": 1542907030863,
+          "time": 1542912293486,
           Symbol(mobx did run lazy initializers): true,
           Symbol(mobx administration): ObservableObjectAdministration$$1 {
             "defaultEnhancer": [Function],
@@ -51,7 +61,7 @@ exports[`App should render without crashing 1`] = `
           "done": false,
           "id": 2,
           "name": "Bob Dylan",
-          "time": 1542907031866,
+          "time": 1542912294490,
           Symbol(mobx did run lazy initializers): true,
           Symbol(mobx administration): ObservableObjectAdministration$$1 {
             "defaultEnhancer": [Function],

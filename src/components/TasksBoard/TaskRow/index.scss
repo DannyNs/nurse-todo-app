@@ -1,0 +1,11 @@
+.nr-task-row {
+  
+  &__done {
+    color: var(--main-success-color);
+  }
+
+  &__name {
+    color: #000000;
+    font-weight: bold;
+  }
+}
